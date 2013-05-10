@@ -40,7 +40,7 @@ my_friends.each do |friend|
   puts "#{friend} is a friend of mine."
 end
 
-# notice this: 
+# notice this:
 # do |variable|
 #   .. code ..
 # end
@@ -55,17 +55,30 @@ end
 
 # Exercises:
 # Explore other methods of Array that are provided by Ruby at http://www.ruby-doc.org/core-1.9.3/Array.html
+new_array = my_friends + my_friends_favorite_numbers;
+puts "#{new_array}"
 
+
+my_work_friends = ["John", "Matt", "Bill"]
+friendResults  = my_friends - my_work_friends;
+
+puts "#{friendResults} are my friends who are not at work"
 
 # Exercise 1:
 # Use join (http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-join) to create a single String of my_friends
 
-
+puts "#{my_friends.join("^")}"
 
 # Exercise 2:
 # Use map (http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-map) to lowercase every person in my_friends
+puts my_friends.map{|x| x.downcase }
+
 
 
 
 # Exercise 3:
 # Use select (http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-select) to select only favorite numbers under 20
+
+newFavs = my_friends_favorite_numbers.delete_if{|x| x>20}
+puts "#{newFavs} vs. #{my_friends_favorite_numbers}"
+

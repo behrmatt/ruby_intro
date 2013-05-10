@@ -7,7 +7,7 @@ require 'uri'
 
 # don't worry about the values inside the hash, they're just for the API
 
-my_number = "12179797638", # <--- !!!!put your number here
+my_number = "16173120688" # <--- !!!!put your number here
 text_message = "Hello there from Hacking for Hustlers!"
 
 my_hash = {
@@ -31,7 +31,7 @@ puts "Open this in a browser and you should be getting a text!"
 # Let's say we don't want to copy that URL into a browser, we can use the HTTParty Library to pretend like we have a browser in Ruby code
 
 # Just uncomment the next line when you run this file
-# HTTParty.get(my_final_url)
+HTTParty.get(my_final_url)
 
 # Exercise 1:
 # Put some of your friends into a Hash with their name and phone numbers

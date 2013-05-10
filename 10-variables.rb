@@ -3,7 +3,7 @@
 # Variables are ways to give names to values in your code
 
 my_name = "David Yang"
-your_name = "YOUR NAME" # <-- put your name here between quotes
+your_name = "Matt" # <-- put your name here between quotes
 
 puts "#{my_name} and #{your_name} are in the same classroom!"
 
@@ -39,3 +39,5 @@ puts "There are only #{days_until_my_birthday} days until #{my_name}'s birthday.
 
 moon_landing = Date.parse("20-07-1969")
 american_revolution = Date.parse("04-07-1776")
+dateDiff = ((moon_landing - american_revolution)/365).to_i
+puts "#{dateDiff} years between the two events"
